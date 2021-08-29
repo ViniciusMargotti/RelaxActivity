@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textDia"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50px"
+        android:orientation="vertical"
+        tools:ignore="NotSibling">
+
+        <EditText
+            android:id="@+id/textDia"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="2"
+            android:hint="Dia" />
+
+        <EditText
+            android:id="@+id/textMes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="2"
+            android:hint="Mês" />
+
+        <EditText
+            android:id="@+id/textAno"
+            android:maxLength="4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ano" />
+
+
+        <Button
+            android:id="@+id/botao"
+            android:onClick="sendMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vou folgar?" />
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
